@@ -16,7 +16,7 @@ raw <- read.csv( "matches.csv", skip = 3 )
 
 # Tables contain cricket stats for each person.
 # The format is:
-# "Batsman" indicates the top left cell and "Extras" indicated the bottom left cell. 
+# "Batsman" indicates the top left cell and "Extras" indicates the bottom left cell. 
 # Use this to locate individual tables.
 # Find the row numbers that begin and end with these words.
 
@@ -80,7 +80,7 @@ for ( i in 1:length( playernames ) ){ # loop over players
 
 # Create a dataframe in a loop and use this to output whatever you want
 # e.g. a histogram for runs, balls, SR and FOW, to supplement the "average"
-# (available from stat collector)
+# (available from stat compiler)
 
 for ( i in 1:length( players ) ){
   df <- data.frame( players[[ playernames[ i ] ]] )
